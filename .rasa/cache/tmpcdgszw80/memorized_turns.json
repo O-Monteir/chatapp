@@ -1,0 +1,25 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVGcWJtbWxABJBTZA=": "utter_hsa",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVGcWJxLkBpBC77lgAuC1k7A==": "action_listen",
+    "eJydjl0KgCAQhK+yB+gEXiVCllhSqjV0DUL27hn1bvg2A9/8jEUHKEek0+IsPrCB8grLuJOBz2w+CXFlc6JYGc/VioElEok2OrIIRfuifQ2NFy7hvw8P2JNu7ItDXq+QVacbelCAHA==": "utter_thankyou",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVGcWJxLkBpJAc3QTsL8lIzMuuzC8lzhFw1XjMiQUAaxib5g==": "action_listen",
+    "eJydjkEKgDAMBL/SB/iCfkUkFFkkYKOkqZeSv1uo94K3WRiGXZsvod2Kh9JufEkMbQBJyojhGycXg3S3Fmh3WPq0GA4FzCeNagalof4rTF4ojBW5MyWRysYo7tsLeOJUwg==": "utter_retirement_annuities",
+    "eJydjlEKgCAQRK/iATqBV4lYJIZYyC3WtR/x7gn2GRj9zcCbx8ylTq6ciovCanyId6UHkhDh3VN2TgZpbE7QxrC0at5tClgdOLIZlDr6zzB4oTBWxJYpiGQ2Rvp26nX50b/cSxd6gg==": "action_listen",
+    "eJytjlEKgCAQRK/iATqBV4kQqSEWaot1DUK8e4J9Bkb0NwMzj9en3Jm0Cw7nR6WNrUk1OPYrrLnLQkHBZRsDpGyIS1VrZgE0NxhRFeLq9BuhYSFQEqwlO88cSQnhndTj8xd+Q3kCnzkPF7Xek+8=": "utter_deny",
+    "eJytjtEJgDAQQ1fpAE7QVURK0SAHesr1Kkhxd4v6qVTEvwRewqvTVpk0CxbnW6WJrUlncOxHWHOVgYKCMxsDJDPEuao1vQC6FT6iKsSd6LeHgoVASTDm7DxzJCWEd1K3y1/+C8odeH2neJAP+2YHwa6sMw==": "action_listen",
+    "eJydjsEJwCAQBFuxgFRgKyGIJIsI8Qzn6Ueu9wjmL+S3A8Owe9fN9IfRnD8lZrKmz+HIJ1jzwR2LgIZbC3g4kQaKNYEB0UWjioDdVP8VFi8IwUtscCnnS/V4AS/bUbU=": "utter_negative_mood",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVeanpiSWZZanxufn5KcS5BlULIRNjAW2KcVs=": "action_listen",
+    "eJylkFEKgCAQRK/iATqBV4kQq0GEWkNXIcS7J9hPX0b97cCbx7BjLoPIh0dSemHrSIrcDkV6hxR32GxgUGVjgK+MpRpZCuMBLh1HZIZXDf1m6KwgGM02Qe3Ore/WPCv/jL0fVcV8opTpAhWZjAE=": "utter_goodbye",
+    "eJylkFEKgCAQRK/iATqBV4kQqyGEXEO3IMS7J+hPH2HU3w68fQzTx9SJuHkcSk9sHEkRy6FIW0hRw2oCgzK7B/jMGMqRpVg8wKnh2JnhVUG/GRotCItmc0BZ5+Z3be4v/4ytjbJiPPFypQo/W4YLCpWmtw==": "action_listen",
+    "eJydjlEKgCAQRK/iATqBV4lYxKZYyC109Ue8e4L9C/3NGx7DrLUtpj4RhZxXvsWaOgKJC7Dmg4uTQrqbE2J3WDqqNWcEtE02sioiDfXfwuTFweLEg5zsxFKQNPS+te0FHv5VZg==": "utter_finance_and_investment",
+    "eJydjlEKgDAMQ6/SA3iCXUWkjBmloFW2bj/DuzvQX1H8S8Jrmr4eHdU9orAPJps6qpdg9Ssc3WaRZNDG5oTYGNFmzdEcATteOrIZIl/ov4aXFZOo1wD2OrJoQbK15d9mPdx+/jGcEK18bg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVRaklmUWpuUB2bW0sAD0sUJM=": "utter_retirement",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVRaklmUWpuUA2cU5BUo/XrFgAhLht9Q==": "action_listen",
+    "eJytjlEKgCAQRK/iATqBV4kQiTEWcot17Ue8e0J9Bkb0NwMzjzeWOpiyCw7nZ6WNrSlXcOwjrLnLSknBbZsTpG2IW1VrFgG0dhhZFeKu6TdCx0KgJIgtO8+cSQnpndTj8xd+R9mHQBJrnU7eYJS0": "utter_affirm",
+    "eJytjkEKgDAMBL/SB/iCfkWkFNlKwEZJUy/Fv1vQo1IRb1mYDNOXvTNlFWzOj0oLW1POw7GPsOYaMyUFVzYnSGWI61RrJgF0bziyKsSd6DdDo0KgJIj1dp45kxLSu6jbz1/8jWQfAkl8F3mxj47hANMtroI=": "action_listen"
+  }
+}

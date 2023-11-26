@@ -1,0 +1,106 @@
+version: "3.1"
+
+stories:
+
+- story: interact 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: finance_and_investment
+    - action: utter_finance_and_investment
+    - intent: retirement
+    - action: utter_retirement
+    - intent: hsa
+    - action: utter_hsa
+    - intent: thankyou
+    - action: utter_thankyou
+    - intent: edu_savings
+    - action: utter_edu_savings
+    - intent: brokerage_funds
+    - action: utter_brokerage_funds
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_thankyou
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: interact 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: finance_and_investment
+    - action: utter_finance_and_investment
+    - intent: retirement
+    - action: utter_retirement
+    - intent: hsa
+    - action: utter_hsa
+    - intent: thankyou
+    - action: utter_thankyou
+    - intent: goodbye
+    - action: utter_goodbye
+
+
+- story: User asks about retirement annuities and expresses affirmation
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: retirement_annuities
+    - action: utter_retirement_annuities
+    - intent: affirm
+    - action: utter_affirm  
+
+- story: User denies the bot's response
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: retirement_annuities
+    - action: utter_retirement_annuities
+    - intent: deny
+    - action: utter_deny
+
+
+- story: User expresses negative mood and ends the conversation
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: negative_mood
+    - action: utter_negative_mood
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: User expresses positive mood and ends the conversation
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: positive_mood
+    - action: utter_positive_mood
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Mutual Funds Explained
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mutual_funds
+    - action: utter_mutual_funds
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Health Savings Accounts (HSA)
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: hsa
+    - action: utter_hsa
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: IRA Overview
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ira
+    - action: utter_ira
+    - intent: goodbye
+    - action: utter_goodbye
+

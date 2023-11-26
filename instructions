@@ -1,0 +1,7 @@
+run rasa server :rasa run -m models --enable-api --cors "*" --debug
+rasa run actions
+
+
+NOTE : ERROR IS : SOCKET.IO AND ENGINE.IO ARE UNSUPOORTED
+
+//YOUR PAGE RUNS HERE : http://127.0.0.1:5500/templates/

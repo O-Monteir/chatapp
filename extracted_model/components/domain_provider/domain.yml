@@ -1,0 +1,67 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- brokerage_funds
+- deny
+- edu_savings
+- finance_and_investment
+- goodbye
+- greet
+- hsa
+- ira
+- mutual_funds
+- negative_mood
+- positive_mood
+- retirement
+- retirement_annuities
+- thankyou
+responses:
+  utter_finance_and_investment:
+  - text: Starting your financial journey involves understanding your goals, assessing your current financial situation, and creating a strategic plan. Key steps include setting clear objectives, budgeting wisely, diversifying investments, and staying informed about the market. Remember, it's essential to align your investments with your risk tolerance and long-term objectives for successful financial growth.
+  utter_retirement:
+  - text: Retirement planning is crucial at any stage of life. Starting early offers the advantage of time and compounding interest, but it's never too late to begin. Consider setting clear retirement goals, assessing your current financial situation. Look into retirement accounts like IRAs, 401(k)s, or other investment options that match your risk tolerance.
+  utter_queries:
+  - text: How may I help you?
+  utter_greet:
+  - text: Hello there! How can I assist you today?
+  utter_retirement_annuities:
+  - text: Of course! A retirement annuity is your personalized savings roadmap for retirement. There are fixed and variable types, each with unique benefits. Fixed annuities provide steady payouts, while variable annuities offer flexibility tied to market changes. It's about securing your future, with options for regular or lump-sum payments, and potential inheritance for your loved ones.
+  utter_ira:
+  - text: An IRA is like a special savings account for retirement. There are Roth and Traditional types. Roth gives tax-free withdrawals later, Traditional offers tax breaks now. Income limits might affect Roth eligibility. Choosing between them is about taxes and timing. You can save in both an IRA and your job's plan together! Forgetting to contribute won't penalize you, but taking out money early might. If you need cash before retirement, there are ways, but it's best to avoid if possible!
+  utter_mutual_funds:
+  - text: Mutual funds are like a team pooling money to buy a mix of investments. Expense ratios? Think of it like a small fee for managing the fund. Some say mutual funds are less risky than single stocks because they spread your money across many investments. Your say in what the manager buys? Limited, but you get to choose the type of fund. When picking, watch for high fees or unpredictable performance. They're a bunch of investments bundled together, and fees impact your returns. They're generally less risky than individual stocks because they spread the risk. The manager calls the shots, but you can pick the style of the fund. Be cautious about high fees and inconsistent performance when choosing one.
+  utter_brokerage_funds:
+  - text: Brokerage accounts are accessible to anyone, no need to be a stock market expert. Human advisors bring expertise and guidance, while self-directed accounts offer control and autonomy. Buying and selling stocks is straightforward in a brokerage account. Various assets like stocks, bonds, ETFs can be traded. Be aware of maintenance fees linked to these accounts.
+  utter_hsa:
+  - text: Sure thing! HSA (Health Savings Account)s have dual purposes for healthcare and retirement. Investing within an HSA, typically in mutual funds or other choices, is permissible. While annual contribution limits apply, they offer advantageous tax benefits. Unused funds may grow over time if not used for healthcare. Post-retirement, contributions can persist without the need for a high-deductible health plan.
+  utter_edu_savings:
+  - text: Certainly! 529 Education Savings serve college and related expenses. Their tax advantages make these plans appealing for savings. In the event of your child not pursuing higher education, transferring the plan to another beneficiary is an option. Even with a scholarship, the 529 plan funds can be used to accommodate educational costs.
+  utter_affirm:
+  - text: Happy to assist! Do you have any other queries?
+  utter_deny:
+  - text: I'm sorry to hear that. Can I assist you in another way?
+  utter_did_that_help:
+  - text: Did that address your concern?
+  - text: Was that helpful in resolving your query?
+  - text: Did that answer your question?
+  utter_negative_mood:
+  - text: Managing finances can be overwhelming at times. I'm here to help you navigate through these challenges. Let's work together to find solutions that bring financial peace of mind.
+  utter_positive_mood:
+  - text: Great to hear! Happiness in your financial journey is a wonderful thing. Keep up the positive momentum!
+  utter_thankyou:
+  - text: Glad I could help! Don't hesitate to return if you have more questions.
+  - text: No problem at all! Happy to assist. Have a great day!
+  utter_goodbye:
+  - text: Goodbye! Have a wonderful day ahead!
+  - text: See you later! If you need further assistance, feel free to reach out.
+  - text: Take care! If there's anything else, I'm here to help.
+  utter_bot_challenge:
+  - text: I am a bot, powered by Rasa.
+  - text: Just a friendly reminder, I'm a bot here to assist you!
+  - text: In case you were wondering, I'm an AI-powered bot!
+  utter_default:
+  - text: I'm sorry, I didn't quite get that.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

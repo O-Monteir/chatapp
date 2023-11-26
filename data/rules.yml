@@ -1,0 +1,37 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: if user says no after utter_affirm for do you have any other queries
+  steps:
+  - action: utter_affirm
+  - intent: deny
+  - action: utter_thankyou
+
+- rule: if user says yes after utter_affirm for do you have any other queries
+  steps:
+  - action: utter_affirm
+  - intent: affirm
+  - action: utter_queries
+
+- rule: if chatbot asks the user if their information helped
+  steps:
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_thankyou
+
+- rule: if chatbot asks the user if their information helped
+  steps:
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_deny
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Efficient Liason for Fina</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <section class="msger">
+        <header class="msger-header">
+            <div class="msger-header-title">
+                <i class="fas fa-comment-alt"></i> Say a "Hi!" to Ella
+            </div>
+            <div class="msger-header-options">
+                <span><i class="fas fa-cog"></i></span>
+            </div>
+        </header>
+
+        <main class="msger-chat">
+            {% for message in chat_history %}
+                {% if message.sender == "User" %}
+                    <!-- User's message -->
+                    <div class="msg right-msg">
+                        <div class="msg-bubble">
+                            <div class="msg-info">
+                                <div class="msg-info-name">You</div>
+                                <div class="msg-info-time" data-timestamp="{{ message.timestamp }}"></div>
+                            </div>
+                            <div class="msg-text">{{ message.message }}</div>
+                        </div>
+                    </div>
+                {% else %}
+                    <!-- Bot's message -->
+                    <div class="msg left-msg">
+                        <img class="msg-img" src="../static/images/bot.png" alt="Ella's Image">
+                        <div class="msg-bubble">
+                            <div class="msg-info">
+                                <div class="msg-info-name">Ella</div>
+                                <div class="msg-info-time" data-timestamp="{{ message.timestamp }}"></div>
+                            </div>
+                            <div class="msg-text">
+                                {{ message.message }}
+                            </div>
+                        </div>
+                    </div>
+                   
+                {% endif %}
+            {% endfor %}
+             <!-- Typing indicator -->
+            <div id="typing-indicator" class="typing-indicator" style="display: none;">
+              Typing...
+            </div>
+        </main>
+
+        <form class="msger-inputarea" action="/" method="post">
+            <input type="text" class="msger-input" name="text" placeholder="Enter your message...">
+            <button type="submit" class="msger-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,395 @@
+version: "3.1"
+
+nlu:
+
+- synonym: finance
+  examples: |
+    - Financial
+    - Money
+    - Monetary
+    - Fiscal
+    - Economic
+    - Capital
+    - Budgetary
+    - Monetary affairs
+
+- synonym: investment
+  examples: |
+    - Investing
+    - Investments
+    - Investing strategies
+    - Investment planning
+    - Investment plan
+    - Portfolio management
+    - Asset allocation
+    - Wealth management
+    - Financial growth strategies
+    - Capital allocation
+    - Financial placement
+  
+- synonym: tips
+  examples: |
+    - Advice
+    - Guidance
+    - Suggestions
+    - Pointers
+    - Recommendations
+    - Tactics
+    - Plans
+    - Approaches
+    - Methods
+    - Techniques
+
+- synonym:  Individual Retirement Account
+  examples: |
+    - ira
+    - iras
+    - ira's
+
+- synonym:  Health Savings Account
+  examples: |
+    - hsa
+    - hsa's
+    - hsas
+
+- synonym:  Education Savings 
+  examples: |
+    - 529 plans
+    - 529 plans's
+  
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - see you
+    - farewell
+    - until next time
+    - take care
+    - goodnight
+    - bye for now
+    - have a great day
+    - catch you later
+    - goodbye then
+    - so long
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - absolutely
+    - certainly
+    - without a doubt
+    - for sure
+    - that's right
+    - exactly
+    - indeed, yes
+    - affirmative
+    - most definitely
+    - okay
+    - ok
+    - ohkay
+    - k
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - that's incorrect
+    - I don't agree
+    - no way
+    - I'm not sure about that
+    - I beg to differ
+    - Not happening.
+    - I don't see it that way.
+    - Not exactly.
+    - I have a different perspective.
+    - That doesn't seem accurate to me.
+    - I'm not convinced.
+    - That's not what I think.
+    - I'm leaning towards a different opinion.
+    - I beg to disagree.
+    - I'm not in agreement.
+    - That's not quite right.
+    - I'm of a different mind.
+    - That's not the case from my viewpoint.
+    - I have reservations about that.
+    - I have my doubts.
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: finance_and_investment
+  examples: |
+    - What are some common tactics employed in investment planning?
+    - Can you suggest key steps for effective financial planning?
+    - Can you share some basic tips for investment strategies?
+    - Any advice on how to start thinking about investments and planning for them?
+    - Any general advice or tips for creating an effective investment plan?
+    - Do you have some fundamental steps I can follow to plan for financial growth?
+    - Could you provide essential strategies for effective financial planning?
+    - Can you suggest key steps for strategizing my investment plan?
+    - I need some basic guidance on creating a financial plan. Any tips?
+    - Could you provide some essential strategies for wealth creation?
+
+- intent: retirement
+  examples: |
+    - I'm in my late 20s, should I start planning for retirement now?
+    - At what age should I seriously begin considering retirement planning?
+    - Is it necessary to start saving for retirement if I'm in my early career?
+    - How do I know if I'm starting to plan for retirement at the right time?
+    - Are there advantages to starting retirement planning early?
+    - Can I catch up on retirement savings if I haven't started in my 30s?
+    - Can you suggest key steps for strategizing my retirement plan?
+    - Can you share some basic tips for retirement planning strategies?
+    - Any advice on how to start thinking about retirement and planning for it?
+    - Do you have some fundamental steps I can follow to plan for retirement?
+    - Could you provide some fundamental tips for effective retirement planning?
+
+
+- intent: retirement_annuities
+  examples: | 
+    - What exactly is a retirement annuity? Is it like a regular pension?
+    - Can you break down the differences between fixed and variable annuities in simpler terms?
+    - So, how does the money in a retirement annuity grow over time? Any tricks to maximize it?
+    - How flexible are annuities? What if I need a lump sum instead of monthly payouts?
+    - Are there any hidden fees or clauses in retirement annuities that I should be aware of?
+    - What happens if I pass away before using up all the money in my annuity?
+
+- intent: ira
+  examples: |
+    - What are iras?
+    - What is an Individual Retirement Account (IRA) and what are its main benefits?
+    - What are the key differences between Roth and Traditional IRAs in terms of tax benefits?
+    - How do income limits impact eligibility for contributing to a Roth IRA?
+    - Can I put my retirement money in both an IRA and my employer's plan at the same time?
+    - Are there any penalties if I forget or can't contribute to my IRA in a given year?
+    - So, what if I need to take out some money from my IRA before retirement?
+
+
+- intent: mutual_funds
+  examples: |
+    - what are mutual funds?
+    - Could you explain the concept of mutual funds in simpler terms?
+    - What's the basic idea behind mutual funds?
+    - How do mutual funds differ from individual stock investments?
+    - Are mutual funds a suitable option for beginners in investing?
+    - What are the advantages of investing in mutual funds over other options?
+    - Could you break down the types of risks associated with mutual funds?
+    - Can you elaborate on how mutual funds are managed by professionals?
+    - Are there specific steps one should take before investing in mutual funds?
+    - Could you clarify how fees and expenses are calculated in mutual funds?
+    - What are the key factors to consider when selecting a mutual fund to invest in?
+    - Do mutual funds offer any tax advantages compared to other investment options?
+    - Could you explain how diversification works within mutual funds?
+    - Explain mutual funds simply.
+    - Benefits of mutual funds?
+    - Risks in mutual funds?
+    - Choosing a mutual fund?
+    - Tax advantages in mutual funds?
+ 
+
+- intent: brokerage_funds
+  examples: |
+    - What exactly are brokerage accounts, and how do they differ from regular bank accounts?
+    - Can you explain the different types of investments I can make using a brokerage account?
+    - Are there any specific risks involved with using a brokerage account for investments?
+    - How much control does one have over investment decisions within a brokerage account?
+    - What are the typical fees associated with maintaining a brokerage account?
+    - Can a beginner easily manage a brokerage account without extensive knowledge?
+    - Are there any restrictions on the types of assets I can trade using a brokerage account?
+    - How do brokerage accounts facilitate buying and selling of securities?
+    - Do brokerage accounts offer any tools or resources for investment analysis?
+    - What advantages does a brokerage account offer over traditional savings accounts?
+    - What's a brokerage account?
+    - Brokerage vs. bank account?
+    - Brokerage account risks?
+    - Managing a brokerage account?
+    - Fees in brokerage accounts?
+    - Assets in brokerage accounts?
+
+- intent: hsa
+  examples: |
+    - How exactly can I utilize a Health Savings Account (HSA) for retirement savings?
+    - Can you provide more details on investing funds within an HSA for retirement purposes?
+    - Are there any tax benefits associated with contributing to an HSA for retirement?
+    - What are the limitations or restrictions on yearly contributions to an HSA?
+    - Can unused funds in an HSA be invested, and how do they grow over time?
+    - After retirement, can I continue contributing to an HSA without a high-deductible health plan?
+    - Can you elaborate on the dual purposes of an HSA for healthcare and retirement?
+    - What options exist within an HSA for investment, apart from mutual funds?
+    - How can I effectively manage an HSA for both short-term healthcare and long-term retirement goals?
+    - Are there any penalties for withdrawing funds from an HSA if not used for healthcare?
+    - HSA for retirement?
+    - Tax benefits in HSA?
+    - HSA contribution limits?
+    - Unused HSA funds growth?
+    - Post-retirement HSA use?
+    - Dual purposes of HSA?
+    - What are hsa? Health Savings Account
+
+
+- intent: edu_savings
+  examples: |
+    - What exactly are 529 plans, and can they be used for educational expenses other than college?
+    - Can you explain the tax advantages associated with investing in a 529 plan?
+    - Are there any specific limitations or restrictions on using funds from a 529 plan?
+    - Can a 529 plan be transferred to another individual if the beneficiary doesn't pursue education?
+    - What options exist within a 529 plan for investment, and how do they affect growth?
+    - Are there any penalties or taxes if the funds in a 529 plan are not used for educational expenses?
+    - Can one have multiple 529 plans for different beneficiaries or educational purposes?
+    - How do 529 plans differ from other education savings options like Coverdell ESA?
+    - What happens to the funds in a 529 plan if the beneficiary gets a full scholarship?
+    - Can you explain how contributions to a 529 plan affect financial aid eligibility?
+    - About 529 plans?
+    - What are 529 plans?
+    - Tax benefits in 529 plans?
+    - Limits in 529 plans?
+    - Investments in 529 plans?
+    - Unused 529 plan funds?
+    - Transferring 529 plans?
+
+
+
+- intent: thankyou
+  examples: |
+    - thanks
+    - thank you
+    - thank you very much
+    - thanks a lot
+    - appreciate it
+    - much appreciated
+    - thank you so much
+    - thank you, that helps
+    - thanks for your help
+    - thanks a bunch
+    - Many thanks for your assistance
+    - I'm grateful for your help
+    - Thank you immensely
+    - Thanking you kindly
+    - I appreciate your support
+    - Grateful for the guidance
+    - Thanks a ton for your help
+    - Thank you for your valuable input
+    - I'm thankful for your advice
+    - Appreciate your insights
+    - Thank you for being so helpful
+    - Thank you, that was beneficial
+    - Thanks a million
+    - Deeply grateful for your assistance
+    - Your help is much appreciated
+    - Many thanks for your insights
+    - Thank you for the support provided
+    - Your help is greatly appreciated
+    - I'm grateful for your assistance
+    - Thanks a bunch for your guidance
+    - Thank you kindly for your help
+    - I appreciate your valuable input
+    - Grateful for the assistance rendered
+    - Thanks for the useful information
+    - Thank you for your valuable advice
+    - I extend my gratitude for your help
+    - Thanks a lot for your support
+    - Much obliged for your assistance
+    - Thank you profoundly for your guidance
+    - I'm thankful for your helpful advice
+
+
+- intent: positive_mood
+  examples: |
+    - My investments are thriving, exceeding expectations!
+    - Remarkably satisfied with my financial progress!
+    - My budgeting has been remarkably effective today!
+    - Enthralled by the exceptional growth in my retirement savings!
+    - Astonished at how smoothly my financial goals are materializing!
+    - Tremendously pleased with the results of my expense tracking!
+    - Overjoyed with my portfolio decisions and their outcomes!
+    - Bursting with excitement over the positive changes in my spending habits!
+    - Thrilled to witness the steady growth in my investments!
+    - Optimistic about successfully reaching my long-term financial goals!
+    - Over the moon with the remarkable performance of my investments!
+    - Pleased to see my financial strategies bearing fruit!
+    - Elated by the prosperous turn in my financial journey!
+    - Highly content with the current state of my finances!
+    - Impressed by the success of my financial planning efforts! 
+    - Feeling really upbeat about my financial situation!
+    - Absolutely delighted with the way my investments are thriving!
+    - Overwhelmed with joy about my recent financial progress!
+    - My financial strategies are yielding incredible results!
+    - Pleased to report my financial goals are well on track!
+    - Feeling wonderfully optimistic about my financial future!
+    - Ecstatic to see my financial efforts paying off splendidly!
+    - Absolutely thrilled with the current state of my finances!
+    - My financial journey is looking brighter than ever!
+    - Excited about the remarkable progress in my investments!
+    - Overjoyed by the success of my recent financial decisions!
+    - Truly satisfied with the way my budget is working out!
+    - Remarkably pleased with my current financial standing!
+    - Feeling immensely positive about my financial endeavors!
+    - My financial situation is looking incredibly promising!
+
+
+- intent: negative_mood
+  examples: |
+    - I'm stressed about my financial situation. Can you offer support or guidance?
+    - My financial concerns are overwhelming me. Any advice to ease my anxiety?
+    - I feel anxious about my expenses. Can you provide guidance to help me manage?
+    - Money issues are making me feel really down. Can you offer some advice to uplift me?
+    - I'm disappointed in my recent financial choices.
+    - I'm feeling really down about my savings.
+    - My expenses are making me quite sad.
+    - Financial stress is affecting me negatively.
+    - I'm feeling really anxious about my financial future.
+    - I'm really worried about my financial situation lately.
+    - Financial stress is getting overwhelming; any advice to cope?
+    - Feeling quite burdened by my financial struggles; can you help?
+    - My financial issues are causing a lot of anxiety and distress.
+    - I'm frustrated with how my financial decisions have turned out.
+    - Not feeling great about the state of my savings; it's quite disheartening.
+    - My budget is causing me a lot of stress; it's really getting to me.
+    - Financial concerns are dampening my spirits; any way to improve?
+    - Worried about the future; my financial situation is bothering me.
+    - I'm feeling pretty down about the way my expenses are stacking up.
+    - It's disheartening to see my finances not improving despite efforts.
+    - I'm feeling overwhelmed by the financial challenges I'm facing.
+    - Financial worries are taking a toll on my overall mood.
+    - My financial situation is causing a lot of distress lately.
+    - Feeling quite low about my financial prospects.
