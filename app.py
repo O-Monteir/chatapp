@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, jsonify
 import requests
 import subprocess
 import time
+import os
 
 app = Flask(__name__, template_folder='Templates')
 
@@ -65,7 +66,8 @@ def get_bot_response_route():
     return jsonify({'bot_response': bot_response})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port)
 
 
 
